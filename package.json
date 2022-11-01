@@ -47,7 +47,8 @@
     "@stdlib/process-read-stdin": "^0.0.x",
     "@stdlib/regexp-eol": "^0.0.x",
     "@stdlib/streams-node-stdin": "^0.0.x",
-    "@stdlib/utils-regexp-from-string": "^0.0.x"
+    "@stdlib/utils-regexp-from-string": "^0.0.x",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.0.x",
