@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isDomainName from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-domain-name@deno/mod.js';
+import isDomainName from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-domain-name@v0.0.1-deno/mod.js';
 ```
 
 #### isDomainName( value )
@@ -71,7 +71,7 @@ bool = isDomainName( 'foo@bar.com' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isDomainName from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-domain-name@deno/mod.js';
+import isDomainName from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-domain-name@v0.0.1-deno/mod.js';
 
 var bool = isDomainName( 'www.example.com' );
 // returns true
