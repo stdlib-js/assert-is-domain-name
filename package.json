@@ -40,23 +40,23 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-regexp-string": "^0.0.x",
-    "@stdlib/assert-is-string": "^0.0.x",
-    "@stdlib/cli-ctor": "^0.0.x",
-    "@stdlib/fs-read-file": "^0.0.x",
-    "@stdlib/process-read-stdin": "^0.0.x",
-    "@stdlib/regexp-eol": "^0.0.x",
-    "@stdlib/streams-node-stdin": "^0.0.x",
-    "@stdlib/utils-regexp-from-string": "^0.0.x"
+    "@stdlib/assert-is-regexp-string": "^0.0.9",
+    "@stdlib/assert-is-string": "^0.0.8",
+    "@stdlib/cli-ctor": "^0.0.3",
+    "@stdlib/fs-read-file": "^0.0.8",
+    "@stdlib/process-read-stdin": "^0.0.7",
+    "@stdlib/regexp-eol": "^0.0.7",
+    "@stdlib/streams-node-stdin": "^0.0.7",
+    "@stdlib/utils-regexp-from-string": "^0.0.9"
   },
   "devDependencies": {
-    "@stdlib/assert-is-boolean": "^0.0.x",
-    "@stdlib/assert-is-browser": "^0.0.x",
-    "@stdlib/assert-is-windows": "^0.0.x",
-    "@stdlib/bench": "^0.0.x",
-    "@stdlib/process-exec-path": "^0.0.x",
-    "@stdlib/string-repeat": "^0.0.x",
-    "@stdlib/string-replace": "^0.0.x",
+    "@stdlib/assert-is-boolean": "^0.0.8",
+    "@stdlib/assert-is-browser": "^0.0.8",
+    "@stdlib/assert-is-windows": "^0.0.7",
+    "@stdlib/bench": "^0.0.12",
+    "@stdlib/process-exec-path": "^0.0.7",
+    "@stdlib/string-repeat": "^0.0.9",
+    "@stdlib/string-replace": "^0.0.11",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "proxyquire": "^2.0.0",
     "istanbul": "^0.4.1",
@@ -99,7 +99,7 @@
     "check"
   ],
   "funding": {
-    "type": "patreon",
-    "url": "https://www.patreon.com/athan"
+    "type": "opencollective",
+    "url": "https://opencollective.com/stdlib"
   }
 }
