@@ -48,6 +48,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isDomainName from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-domain-name@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-domain-name/tags). For example,
+
+```javascript
 import isDomainName from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-domain-name@v0.2.1-esm/index.mjs';
 ```
 
@@ -87,7 +92,7 @@ bool = isDomainName( 'foo@bar.com' );
 <body>
 <script type="module">
 
-import isDomainName from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-domain-name@v0.2.1-esm/index.mjs';
+import isDomainName from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-domain-name@esm/index.mjs';
 
 var bool = isDomainName( 'www.example.com' );
 // returns true
