@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-domain-name",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Test if a value is a domain name.",
   "license": "Apache-2.0",
   "author": {
@@ -40,22 +40,22 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-regexp-string": "^0.2.1",
-    "@stdlib/assert-is-string": "^0.2.1",
-    "@stdlib/cli-ctor": "^0.2.1",
-    "@stdlib/fs-read-file": "^0.2.1",
-    "@stdlib/process-read-stdin": "^0.2.1",
-    "@stdlib/regexp-eol": "^0.2.1",
-    "@stdlib/streams-node-stdin": "^0.2.1",
-    "@stdlib/utils-regexp-from-string": "^0.2.1"
+    "@stdlib/assert-is-regexp-string": "^0.2.2",
+    "@stdlib/assert-is-string": "^0.2.2",
+    "@stdlib/cli-ctor": "^0.2.2",
+    "@stdlib/fs-read-file": "^0.2.2",
+    "@stdlib/process-read-stdin": "^0.2.2",
+    "@stdlib/regexp-eol": "^0.2.2",
+    "@stdlib/streams-node-stdin": "^0.2.2",
+    "@stdlib/utils-regexp-from-string": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/assert-is-boolean": "^0.2.1",
-    "@stdlib/assert-is-browser": "^0.2.1",
-    "@stdlib/assert-is-windows": "^0.2.1",
-    "@stdlib/process-exec-path": "^0.2.1",
+    "@stdlib/assert-is-boolean": "^0.2.2",
+    "@stdlib/assert-is-browser": "^0.2.2",
+    "@stdlib/assert-is-windows": "^0.2.2",
+    "@stdlib/process-exec-path": "^0.2.2",
     "@stdlib/string-repeat": "^0.2.1",
-    "@stdlib/string-replace": "^0.2.1",
+    "@stdlib/string-replace": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "proxyquire": "^2.0.0",
     "istanbul": "^0.4.1",
