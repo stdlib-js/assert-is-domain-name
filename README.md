@@ -41,175 +41,13 @@ limitations under the License.
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/assert-is-domain-name
-```
 
-Alternatively,
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
 
-</section>
-
-<section class="usage">
-
-## Usage
-
-```javascript
-var isDomainName = require( '@stdlib/assert-is-domain-name' );
-```
-
-#### isDomainName( value )
-
-Tests if a `value` is a domain name.
-
-```javascript
-var bool = isDomainName( 'example.com' );
-// returns true
-
-bool = isDomainName( 'foo@bar.com' );
-// returns false
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
-## Notes
-
--   Validation adheres to [RFC 2181][rfc-2181], which defines the syntax for domain names and stipulates that domain names must be 255 characters or less.
-
-<!-- </notes -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var isDomainName = require( '@stdlib/assert-is-domain-name' );
-
-var bool = isDomainName( 'www.example.com' );
-// returns true
-
-bool = isDomainName( 'foo@bar.com' );
-// returns false
-
-bool = isDomainName( 'beep boop' );
-// returns false
-
-bool = isDomainName( null );
-// returns false
-
-bool = isDomainName( 5.0 );
-// returns false
-```
-
-</section>
-
-<!-- /.examples -->
-
-* * *
-
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use as a general utility, install the CLI package globally
-
-```bash
-npm install -g @stdlib/assert-is-domain-name-cli
-```
-
-</section>
-
-<!-- CLI usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: is-domain-name [options] [<string>]
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-### Notes
-
--   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
-
-    ```bash
-    # Not escaped...
-    $ echo -n $'foo@bar.com\nbaz.com' | is-domain-name --split /\r?\n/
-
-    # Escaped...
-    $ echo -n $'foo@bar.com\nbaz.com' | is-domain-name --split /\\r?\\n/
-    ```
-
--   The implementation ignores trailing delimiters.
-
-</section>
-
-<!-- /.notes -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ is-domain-name example.com
-true
-```
-
-To use as a [standard stream][standard-streams],
-
-```bash
-$ echo -n 'example.com' | is-domain-name
-true
-```
-
-By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
-
-```bash
-$ echo -n 'beep boop\tbaz.com' | is-domain-name --split '\t'
-false
-true
-```
-
-</section>
-
-<!-- /.examples -->
 
 </section>
 
@@ -218,6 +56,11 @@ true
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-domain-name`][@stdlib/assert-is-domain-name]</span><span class="delimiter">: </span><span class="description">test if a value is a domain name.</span>
+
 
 </section>
 
@@ -228,7 +71,7 @@ true
 
 <section class="main-repo" >
 
-* * *
+
 
 ## Notice
 
@@ -236,7 +79,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -259,8 +102,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-domain-name.svg
-[npm-url]: https://npmjs.org/package/@stdlib/assert-is-domain-name
+[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-domain-name-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/assert-is-domain-name-cli
 
 [test-image]: https://github.com/stdlib-js/assert-is-domain-name/actions/workflows/test.yml/badge.svg?branch=v0.2.2
 [test-url]: https://github.com/stdlib-js/assert-is-domain-name/actions/workflows/test.yml?query=branch:v0.2.2
